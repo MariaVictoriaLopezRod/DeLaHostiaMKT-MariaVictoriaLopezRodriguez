@@ -1,0 +1,1366 @@
+/* reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* características generales de enlaces-listas */
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color:#F2784B;    
+}
+
+/* ESTILO DE TÍTULOS SECCIONES */
+
+.tituloSeccion {
+    color: #F2784B;
+    font-size: 30px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+}
+
+
+/* CUERPO GENERAL */
+
+body{
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+}
+
+/* ENCABEZADO GENERAL */
+
+.encabezado {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #292929;
+    border-bottom: #F2784B solid 2px ;
+}
+
+
+/* FOOTER GENERAL */
+
+.contenedorRedesSociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #292929;
+    border-top: #F2784B solid 2px;
+    margin-top: 150px;
+}
+
+.listaRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* MEDIA QUERIES DESKTOP */
+
+/* MEDIA QUERIES HOME - DESKTOP */
+
+@media screen and (min-width:1024px) {
+
+    /* GRID LAYOUT HOME DESKTOP */
+    
+    .gridHome {
+        display: grid;
+        grid-template-areas: "articuloDeInteres articuloDeInteres"
+                            "contenedorTextoArticuloUno imgArticuloUno"
+                            "contenedorTextoArticuloUno imgArticuloUno";
+        grid-template-rows: 100px 150px 150px;
+        grid-template-columns: 600px 400px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* ENCABEZADO HOME DESKTOP */
+        
+    .logoAgencia {
+        width: 20%;
+    }
+    
+    .fraseEncabezado {
+        color: #F2784B;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        font-size: 40px;
+    }
+    
+    /* MENÚ DE NAVEGACIÓN HOME DESKTOP */
+
+    .menuDeNavegacionHome {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .seccionMenuNavegacionHome {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .seccionAbiertaHome {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    }
+    
+    /* FORMULARIO HOME DESKTOP */
+    
+    .formularioSuscripcion {
+        color: black;
+        background-color: #F2784B;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .contenedorFormularioSuscripcion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 150px;
+    }
+    
+    .itemFormularioSuscripcion {
+        text-align: center;
+    }
+    
+    .botonSend {
+        color: #F2784B;
+        background-color: #292929;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        cursor:pointer;
+        padding: 2px;
+        margin-top: 5px;
+    }
+    
+    /* TÍTULO Y TEXTO HOME DESKTOP */
+    
+    .articuloDeInteres {
+        grid-area: articuloDeInteres;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .imagenCohete {
+        width: 100px;
+    }
+    
+    .marketingNews {
+        background-color: #F2784B;
+        color: black;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+    
+    .contenedorTextoArticuloUno {
+        grid-area: contenedorTextoArticuloUno;
+    }
+    
+    .tituloArticuloUno {
+        color: #F2784B;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .textoArticuloUno {
+        font-size: 20px;    
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        color: #F2784B;        
+    }
+    
+    .contenedorImagenArticuloUno {
+        grid-area: imgArticuloUno;
+    }
+    
+    .ImagenArticuloUno {
+        width: 300px;
+    }
+    
+    .linkAlArticuloUno{
+        font-size: 25px;
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: underline #F2784B;
+        margin-left: 230px;
+    }
+    
+    /* FOOTER DESKTOP */
+    
+    .imagenIconoRedes {
+        width: 50px;
+    }
+    
+    .contenedorRedesSociales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #292929;
+        border-top: #F2784B solid 2px;
+        margin-top: 150px;
+    }
+    
+    .redesSociales {
+        color: #F2784B;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        font-size: 20px;
+    }
+    
+    .listaRedes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    /* SECCION NOSOTROS - DESKTOP */
+
+    /* GRID LAYOUT SECCION NOSOTROS - DESKTOP */
+
+    .gridSeccionNosotros {
+        display: grid;
+        grid-template-areas: "tituloNosotros tituloNosotros"
+                             "parrafoNosotros imagenRae";
+        grid-template-rows: 150px 350px;
+        grid-template-columns: 600px 400px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* MENÚ DE NAVEGACIÓN SECCION NOSOTROS - DESKTOP */
+    
+    .menuDeNavegacionNosotros {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .seccionMenuNavegacionNosotros {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .seccionAbiertaNosotros {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    /* MAIN SECCION NOSOTROS - DESKTOP */
+
+    .tituloSeccion {
+        grid-area: tituloNosotros;
+        color: #F2784B;
+        font-size: 30px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-align: center;
+    }
+
+    .parrafoSeccionNosotros {
+        grid-area: parrafoNosotros;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        width: 500px;
+        text-align: center;
+    }
+
+    .imagenNosotros {
+        grid-area: imagenRae;
+        width: 300px;
+    }
+
+    /* SECCION NUESTROS SERVICIOS - DESKTOP */
+
+    /* GRID LAYOUT NUESTROS SERVICIOS - DESKTOP */
+
+    .gridNuestrosServicios {
+        display: grid;
+        grid-template-areas: "tituloNuestrosServicios tituloNuestrosServicios"
+                             "parrafoNuestrosServicios parrafoNuestrosServicios"
+                             "listaServicios listaServicios"
+                             "parrafoDosNuestrosServicios parrafoDosNuestrosServicios";
+        grid-template-rows: 100px 150px 300px 100px;
+        grid-template-columns: 200px 200px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* MENÚ DE NAVEGACIÓN SECCION NUESTROS SERVICIOS - DESKTOP */
+
+    .menuDeNavegacionNuestrosServicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .seccionMenuNavegacionNuestrosServicios {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .seccionAbiertaNuestrosServicios {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    } 
+
+    /* MAIN SECCION NUESTROS SERVICIOS - DESKTOP */
+
+    .tituloSeccionNuestrosServicios {
+        grid-area: tituloNuestrosServicios;
+        color: #F2784B;
+        font-size: 30px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-align: center;
+    }
+
+    .parrafoSeccionNuestrosServicios {
+        grid-area: parrafoNuestrosServicios;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        width: 500px;
+        text-align: center;
+    }
+
+    .palabraResaltada {
+        color: #292929;
+        background-color: #F2784B;
+    }
+
+    .contenedorListaServicios {
+        grid-area: listaServicios;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listaServicios {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        color: #292929;
+        background-color: #F2784B;
+        border:#292929 3px solid;
+        border-radius: 50px;
+        padding: 5px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .parrafoDosSeccionNuestrosServicios{
+        grid-area: parrafoDosNuestrosServicios;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        width: 500px;
+        text-align: center;
+    }
+
+    /* SECCION MARCAS ASOCIADAS - DESKTOP */
+
+    /* GRID LAYOUT SECCION MARCAS ASOCIADAS - DESKTOP */
+
+    .gridMarcasAsociadas {  
+        display: grid; 
+        grid-template-areas: "tituloSeccionMarcasAsociadas tituloSeccionMarcasAsociadas"
+                         "parrafoSeccionMarcasAsociadas parrafoSeccionMarcasAsociadas"
+                         "contenedorMarcasAsociadas contenedorMarcasAsociadas";
+        grid-template-rows: 70px 200px 400px;
+        grid-template-columns: 200px 200px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* MENÚ DE NAVEGACIÓN SECCION MARCAS ASOCIADAS - DESKTOP */
+
+    .menuDeNavegacionMarcasAsociadas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .seccionMenuNavegacionMarcasAsociadas {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .seccionAbiertaMarcasAsociadas {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    } 
+
+    /* MAIN SECCION MARCAS ASOCIADAS - DESKTOP */
+
+    .tituloSeccionMarcasAsociadas {
+        grid-area: tituloSeccionMarcasAsociadas;
+        color: #F2784B;
+        font-size: 30px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .parrafoSeccionMarcasAsociadas {
+        grid-area: parrafoSeccionMarcasAsociadas;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        width: 500px;
+        text-align: center;
+    }
+
+    .palabraResaltada {
+        color: #292929;
+        background-color: #F2784B;
+    }
+
+    .contenedorMarcasAsociadas {
+        grid-area: contenedorMarcasAsociadas;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .itemMarcasAsociadas {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        color: #292929;
+        background-color: #F2784B;
+        border:#292929 3px solid;
+        border-radius: 50px;
+        padding: 5px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    /* SECCION CONTACTO - DESKTOP */
+
+    /* MENÚ DE NAVEGACION SECCION CONTACTO - DESKTOP */
+
+    .menuDeNavegacionContacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .seccionMenuNavegacionContacto {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .seccionAbiertaContacto {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    } 
+
+    /* MAIN SECCION CONTACTO - DESKTOP */
+
+    .formularioContacto {
+        color: black;
+        background-color: #F2784B;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .contenedorFormularioContacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 250px;
+        margin-top: 50px;
+    }
+    
+    .itemFormularioContacto{
+        text-align: center;
+    }
+    
+}
+
+    /* MEDIA QUERIES - TABLET */
+
+    /* MEDIA QUERIES HOME - TABLET */
+
+@media screen and (max-width:1023px) {
+
+    /* GRID LAYOUT HOME - TABLET */
+
+    .gridHome {
+        display: grid;
+        grid-template-areas: "articuloDeInteres"
+                             "imgArticuloUno"
+                             "contenedorTextoArticuloUno";
+        grid-template-rows: 100px 200px 300px;
+        grid-template-columns: 500px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* ENCABEZADO HOME - TABLET */
+
+    .fraseEncabezado {
+        display: none;
+    }
+
+    .logoAgencia {
+        width: 30%;
+    }
+
+    /* MENÚ DE NAVEGACIÓN HOME - TABLET */
+
+    .menuDeNavegacionHome {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .seccionMenuNavegacionHome {
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+    .seccionAbiertaHome {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    /* FORMULARIO SUSCRIPCIÓN HOME - TABLET */
+
+    .formularioSuscripcion {
+        color: black;
+        background-color: #F2784B;
+        padding: 10px;
+        margin-top: 30px;
+    }
+    
+    .contenedorFormularioSuscripcion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 90px;
+    }
+
+    .itemFormularioSuscripcion {
+        text-align: center;
+    }
+
+    .botonSend {
+        color: #F2784B;
+        background-color: #292929;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        cursor:pointer;
+        padding: 2px;
+        margin-top: 5px;
+    }
+
+    /* MAIN HOME - TABLET */
+
+    .articuloDeInteres {
+        grid-area: articuloDeInteres;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .imagenCohete {
+        width: 50px;
+    }
+    
+    .marketingNews {
+        background-color: #F2784B;
+        color: black;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    
+    .contenedorTextoArticuloUno {
+        grid-area: contenedorTextoArticuloUno;
+    }
+
+    .tituloArticuloUno {
+        color: #F2784B;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .textoArticuloUno {
+        font-size: 15px;    
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        color: #F2784B;
+        width: 400px;
+        text-align: center;
+    }
+    
+    .ImagenArticuloUno {
+        width: 250px;
+    }
+
+    .linkAlArticuloUno{
+        font-size: 20px;
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: underline #F2784B;
+        margin-left: 155px;
+    }
+
+    /* FOOTER HOME - TABLET */
+
+    .imagenIconoRedes {
+        width: 30px;
+    }
+
+    .redesSociales {
+        color: #F2784B;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        font-size: 15px;
+    }
+
+    /* MEDIA QUERIES SECCION NOSOTROS - TABLET */
+
+    /* GRID LAYOUT SECCION NOSOTROS - TABLET */
+
+    .gridSeccionNosotros {
+        display: grid;
+        grid-template-areas: "tituloNosotros"
+                             "parrafoNosotros"
+                             "imagenRae";
+        grid-template-rows: 100px 200px 350px;
+        grid-template-columns: 500px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* MENÚ DE NAVEGACIÓN SECCION NOSOTROS - TABLET */
+
+    .menuDeNavegacionNosotros {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .seccionMenuNavegacionNosotros {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .seccionAbiertaNosotros {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    /* MAIN SECCION NOSOTROS - TABLET */
+
+    .imagenNosotros {
+        width: 300px;
+        grid-area: imagenRae;
+    }
+
+    .parrafoSeccionNosotros {
+    grid-area: parrafoNosotros;
+    color: #F2784B;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+    text-align: center;
+    }
+
+    /* SECCION NUESTROS SERVICIOS - TABLET */
+
+    /* GRID LAYOUT NUESTROS SERVICIOS - TABLET */
+
+    .gridNuestrosServicios {
+        display: grid;
+        grid-template-areas: "tituloNuestrosServicios tituloNuestrosServicios"
+                             "parrafoNuestrosServicios parrafoNuestrosServicios"
+                             "listaServicios listaServicios"
+                             "parrafoDosNuestrosServicios parrafoDosNuestrosServicios";
+        grid-template-rows: 90px 100px 300px 90px;
+        grid-template-columns: 200px 200px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* MENÚ DE NAVEGACIÓN SECCION NUESTROS SERVICIOS - TABLET */
+
+    .menuDeNavegacionNuestrosServicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .seccionMenuNavegacionNuestrosServicios {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .seccionAbiertaNuestrosServicios {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    } 
+
+    /* MAIN SECCION NUESTROS SERVICIOS - TABLET */
+
+    .tituloSeccionNuestrosServicios {
+        grid-area: tituloNuestrosServicios;
+        color: #F2784B;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-align: center;
+    }
+
+    .parrafoSeccionNuestrosServicios {
+        grid-area: parrafoNuestrosServicios;
+        color: #F2784B;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        width: 500px;
+        text-align: center;
+    }
+
+    .palabraResaltada {
+        color: #292929;
+        background-color: #F2784B;
+    }
+
+    .contenedorListaServicios {
+        grid-area: listaServicios;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listaServicios {
+        font-size: 18px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        color: #292929;
+        background-color: #F2784B;
+        border:#292929 3px solid;
+        border-radius: 50px;
+        padding: 5px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .parrafoDosSeccionNuestrosServicios{
+        grid-area: parrafoDosNuestrosServicios;
+        color: #F2784B;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        width: 500px;
+        text-align: center;
+    }
+
+    
+    /* SECCION MARCAS ASOCIADAS - TABLET */
+
+    /* GRID LAYOUT SECCION MARCAS ASOCIADAS - TABLET */
+
+    .gridMarcasAsociadas {  
+        display: grid; 
+        grid-template-areas: "tituloSeccionMarcasAsociadas tituloSeccionMarcasAsociadas"
+                         "parrafoSeccionMarcasAsociadas parrafoSeccionMarcasAsociadas"
+                         "contenedorMarcasAsociadas contenedorMarcasAsociadas";
+        grid-template-rows: 70px 200px 400px;
+        grid-template-columns: 200px 200px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* MENÚ DE NAVEGACIÓN SECCION MARCAS ASOCIADAS - TABLET */
+
+    .menuDeNavegacionMarcasAsociadas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+        
+    .seccionMenuNavegacionMarcasAsociadas {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+        
+    .seccionAbiertaMarcasAsociadas {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    } 
+    
+    /* MAIN SECCION MARCAS ASOCIADAS - TABLET */
+    
+    .tituloSeccionMarcasAsociadas {
+        grid-area: tituloSeccionMarcasAsociadas;
+        color: #F2784B;
+        font-size: 30px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .parrafoSeccionMarcasAsociadas {
+        grid-area: parrafoSeccionMarcasAsociadas;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        width: 500px;
+        text-align: center;
+    }
+    
+    .palabraResaltada {
+        color: #292929;
+        background-color: #F2784B;
+    }
+    
+    .contenedorMarcasAsociadas {
+        grid-area: contenedorMarcasAsociadas;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .itemMarcasAsociadas {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        color: #292929;
+        background-color: #F2784B;
+        border:#292929 3px solid;
+        border-radius: 50px;
+        padding: 5px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    /* SECCION CONTACTO - TABLET */
+
+    /* MENÚ DENAVEGACION SECCION CONTACTO - TABLET */
+
+    .menuDeNavegacionContacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .seccionMenuNavegacionContacto {
+        font-size: 22px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .seccionAbiertaContacto {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 25px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    } 
+
+    /* MAIN SECCION CONTACTO - TABLET */
+
+    .formularioContacto {
+        color: black;
+        background-color: #F2784B;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .contenedorFormularioContacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 250px;
+        margin-top: 50px;
+    }
+    
+    .itemFormularioContacto{
+        text-align: center;
+    }
+}
+
+    /* MEDIA QUERIES - CELULAR */
+
+    /* MEDIA QUERIES HOME - CELULAR */
+
+@media screen and (max-width:646px) {
+
+    /* GRID LAYOUT HOME - CELULAR */
+
+    .gridHome {
+        display: none;
+    }
+
+    /* ENCABEZADO HOME - CELULAR */
+
+    .fraseEncabezado {
+        display: none;
+    }
+    
+    .logoAgencia {
+        width: 50%;
+    }
+
+    /* MENÚ DE NAVEGACION HOME - CELULAR */
+    
+    .menuDeNavegacionHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 70px;
+    }
+
+    .seccionMenuNavegacionHome {
+        font-size: 30px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 6px;
+        margin: 6px;
+    }
+
+    .seccionAbiertaHome {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 30px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+        margin: 2px;
+    }
+
+    /* FORMULARIO HOME - CELULAR */
+
+    .formularioSuscripcion {
+        display: none;
+    }  
+        
+    /* SECCION NOSOTROS - CELULAR */
+
+    /* GRID LAYOUT SECCION NOSOTROS - CELULAR */
+
+    .gridSeccionNosotros {
+        display: grid;
+        grid-template-areas: "tituloNosotros"
+                             "parrafoNosotros"
+                             "imagenRae";
+        grid-template-rows: 100px 150px 300px;
+        grid-template-columns: 500px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    /* MENÚ DE NAVEGACÓN SECCION NOSOTROS - CELULAR */
+    
+    .menuDeNavegacionNosotros {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .seccionMenuNavegacionNosotros {
+        font-size: 12px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .seccionAbiertaNosotros {
+        color: #000000;
+        font-size: 12px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        border-radius: 50px;
+    }
+
+    /* MAIN SECCION NOSOTROS - CELULAR */
+    
+    .imagenNosotros {
+        width: 200px;
+    }
+    
+    .parrafoSeccionNosotros {
+        grid-area: parrafoNosotros;
+        color: #F2784B;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        width: 400px;
+        text-align: center;
+    }
+    
+    /* SECCION NUESTROS SERVICIOS - CELULAR */
+    
+    /* GRID LAYOUT NUESTROS SERVICIOS- CELULAR */
+
+    .gridNuestrosServicios {
+    display: grid;
+    grid-template-areas: "tituloNuestrosServicios tituloNuestrosServicios"
+                         "parrafoNuestrosServicios parrafoNuestrosServicios"
+                         "listaServicios listaServicios"
+                         "parrafoDosNuestrosServicios parrafoDosNuestrosServicios";
+    grid-template-rows: 90px 100px 250px 90px;
+    grid-template-columns: 100px 100px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    }
+
+    /* MENÚ DE NAVEGACIÓN SECCION NUESTROS SERVICIOS - CELULAR */
+
+    .menuDeNavegacionNuestrosServicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .seccionMenuNavegacionNuestrosServicios {
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+    .seccionAbiertaNuestrosServicios {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    /* MAIN SECCION NUESTROS SERVICIOS - CELULAR */
+
+    .tituloSeccionNuestrosServicios {
+        grid-area: tituloNuestrosServicios;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-align: center;
+    }
+
+    .parrafoSeccionNuestrosServicios {
+        grid-area: parrafoNuestrosServicios;
+        color: #F2784B;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        width: 450px;
+        text-align: center;
+    }
+
+    .palabraResaltada {
+        color: #292929;
+        background-color: #F2784B;
+    }
+
+    .contenedorListaServicios {
+        grid-area: listaServicios;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listaServicios {
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        color: #292929;
+        background-color: #F2784B;
+        border:#292929 3px solid;
+        border-radius: 50px;
+        padding: 5px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .parrafoDosSeccionNuestrosServicios{
+        grid-area: parrafoDosNuestrosServicios;
+        color: #F2784B;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        width: 450px;
+        text-align: center;
+    }
+
+    /* SECCION MARCAS ASOCIADAS - CELULAR */
+
+    /* GRID LAYOUT SECCION MARCAS ASOCIADAS - CELULAR */
+
+    .gridMarcasAsociadas {  
+        display: grid; 
+        grid-template-areas: "tituloSeccionMarcasAsociadas tituloSeccionMarcasAsociadas"
+                         "parrafoSeccionMarcasAsociadas parrafoSeccionMarcasAsociadas"
+                         "contenedorMarcasAsociadas contenedorMarcasAsociadas";
+        grid-template-rows: 70px 150px 350px;
+        grid-template-columns: 200px 200px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* MENÚ DE NAVEGACION SECCION MARCAS ASOCIADAS - CELULAR */
+
+    .menuDeNavegacionMarcasAsociadas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .seccionMenuNavegacionMarcasAsociadas {
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+    .seccionAbiertaMarcasAsociadas {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    /* MAIN SECCION MARCAS ASOCIADAS - CELULAR */
+
+    .tituloSeccionMarcasAsociadas {
+        grid-area: tituloSeccionMarcasAsociadas;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-align: center;
+    }
+
+    .parrafoSeccionMarcasAsociadas {
+        grid-area: parrafoSeccionMarcasAsociadas;
+        color: #F2784B;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        width: 450px;
+        text-align: center;
+    }
+
+    .palabraResaltada {
+        color: #292929;
+        background-color: #F2784B;
+    }
+
+    .contenedorMarcasAsociadas {
+        grid-area: contenedorMarcasAsociadas;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .itemMarcasAsociadas {
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        color: #292929;
+        background-color: #F2784B;
+        border:#292929 3px solid;
+        border-radius: 50px;
+        padding: 5px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    /* SECCION CONTACTO - CELULAR */
+
+    /* MENÚ DE NAVEGACION SECCION CONTACTO - CELULAR */
+
+    .menuDeNavegacionContacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .seccionMenuNavegacionContacto {
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+    .seccionAbiertaContacto {
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    /* MAIN SECCION CONTACTO - CELULAR */
+
+    .formularioContacto {
+        color: black;
+        background-color: #F2784B;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .contenedorFormularioContacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 200px;
+        margin-top: 50px;
+    }
+    
+    .itemFormularioContacto{
+        text-align: center;
+    }
+
+    /* FOOTER SECCION CONTACTO - CELULAR */
+    
+    .imagenIconoRedes {
+        width: 50px;
+    }
+        
+    .contenedorRedesSociales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #292929;
+        border-top: #F2784B solid 2px;
+        margin-top: 180px;
+    }
+        
+    .redesSociales {
+        color: #F2784B;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        font-size: 20px;
+    }
+        
+    .listaRedes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
